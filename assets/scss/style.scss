@@ -1,0 +1,41 @@
+
+/* sass */
+
+$breedte: 20%;
+$font-size:15px;
+$bg-color:#000;
+$sta-padding:20px;
+
+/* voorbeeld w3school linear-gradient */
+
+body {
+    height: auto;
+    background-image: linear-gradient(to  right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.header{
+    display: flex;
+    background-color:$bg-color;
+    padding: $sta-padding;
+    img{
+    width: $breedte;
+  }
+}
+
+button{
+    font-size: $font-size;
+    &:hover{
+    font-size: $font-size*2;
+    color:$bg-color;
+    }
+}
+
+.main{
+    display: flex;
+  *{
+    justify-content: space-around;
+    background-color: $bg-color;
+    width: $breedte;
+    padding:$sta-padding;
+}
+}
